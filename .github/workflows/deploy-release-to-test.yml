@@ -1,4 +1,4 @@
-name: Deploy release to test.os2forms.dk
+name: Deploy release to os2forms-bellcom.devel.dk
 on:
   push:
     tags:        
@@ -17,4 +17,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           whoami
-          sh /var/www/test.os2forms.dk/private/os2forms_init/rebuild_installation.sh
+          sh /var/www/os2forms-bellcom.devel.dk/private/os2forms_init/rebuild_installation.sh
